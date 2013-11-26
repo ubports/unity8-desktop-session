@@ -18,9 +18,15 @@
 xsessiondir = ${datarootdir}/xsessions
 icondir = ${datarootdir}/unity-greeter
 
-dist_xsession_DATA = unity8-x11.desktop
+dist_xsession_DATA = \
+	unity8-mir.desktop \
+	unity8-x11.desktop
 
-dist_icon_DATA = custom_unity8-x11_badge.png
+dist_icon_DATA = \
+	custom_unity8-mir_badge.png \
+	custom_unity8-x11_badge.png
 
-EXTRA_DIST =  custom_unity8-x11_badge.xcf
+EXTRA_DIST = \
+	custom_unity8-mir_badge.xcf \
+	custom_unity8-x11_badge.xcf
 
