@@ -18,3 +18,4 @@
 AM_MAKEFLAGS = --no-print-directory
 
 SUBDIRS = data
+EXTRA_DIST = autogen.sh
