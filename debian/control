@@ -1,0 +1,17 @@
+Source: unity8-session
+Section: misc
+Priority: optional
+Maintainer: Stephen M. Webb <stephen.webb@canonical.com>
+Build-Depends: debhelper (>= 9),
+               dh-autoreconf
+Standards-Version: 3.9.5
+
+Package: unity8-session-x11
+Architecture: all
+Depends: ${misc:Depends},
+         unity8
+Description: Unity8 desktop session for X11
+ .
+ A desktop session running Unity8 on an X11 back end.
+ .
+ This package is provided for evaluation and demonstration purposes only.

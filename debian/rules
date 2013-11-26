@@ -1,0 +1,7 @@
+#!/usr/bin/make -f
+
+%:
+	dh $@ --with autoreconf
+
+override_dh_autoreconf:
+	NOCONFIGURE=1 dh_autoreconf /bin/sh -- ./autogen.sh
