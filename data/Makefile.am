@@ -22,3 +22,5 @@ dist_xsession_DATA = unity8-x11.desktop
 
 dist_icon_DATA = custom_unity8-x11_badge.png
 
+EXTRA_DIST =  custom_unity8-x11_badge.xcf
+
