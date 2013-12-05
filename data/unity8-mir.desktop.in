@@ -1,5 +1,5 @@
 [Desktop Entry]
 Name=Unity8-Mir
-Exec=/usr/bin/unity8 -platform ubuntumirserver
+Exec=@EXEC_DIR@/start-unity8-mir
 Type=Application
 X-LightDM-Session-Type=mir

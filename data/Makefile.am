@@ -18,6 +18,9 @@
 xsessiondir = ${datarootdir}/xsessions
 icondir = ${datarootdir}/unity-greeter
 
+dist_pkgdata_SCRIPTS = \
+	start-unity8-mir
+
 dist_xsession_DATA = \
 	unity8-mir.desktop \
 	unity8-x11.desktop
@@ -27,6 +30,13 @@ dist_icon_DATA = \
 	custom_unity8-x11_badge.png
 
 EXTRA_DIST = \
+	unity8-mir.desktop.in \
 	custom_unity8-mir_badge.xcf \
 	custom_unity8-x11_badge.xcf
 
+CLEANFILES = \
+	unity8-mir.desktop
+
+unity8-mir.desktop: unity8-mir.desktop.in Makefile
+	$(AM_V_GEN)sed -e 's,[@]EXEC_DIR[@],$(pkgdatadir),g' \
+	    <$(srcdir)/unity8-mir.desktop.in >unity8-mir.desktop

@@ -1,8 +1,8 @@
-*.debhelper.log
 aclocal.m4
 autom4te.cache
 config.*
 configure
+*.debhelper.log
 debian/autoreconf.*
 debian/unity8-session-mir
 debian/unity8-session-x11
@@ -10,3 +10,4 @@ install-sh
 Makefile
 Makefile.in
 missing
+unity8-mir.desktop
