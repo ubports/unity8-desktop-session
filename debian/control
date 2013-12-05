@@ -9,6 +9,7 @@ Standards-Version: 3.9.5
 Package: unity8-session-mir
 Architecture: all
 Depends: ${misc:Depends},
+         ubuntu-desktop-mir,
          unity8,
          qtubuntu-android
 Description: Unity8 desktop session for Mir
@@ -20,8 +21,9 @@ Description: Unity8 desktop session for Mir
 Package: unity8-session-x11
 Architecture: all
 Depends: ${misc:Depends},
+         ubuntu-desktop-mir,
          unity8,
-         unity-system-compositor
+         unity8-fake-env
 Description: Unity8 desktop session for X11
  .
  A desktop session running Unity8 on an X11 back end.

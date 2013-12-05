@@ -1,5 +1,5 @@
-unity8-session (1.0.0-0ubuntu1) UNRELEASED; urgency=low
+unity8-session (1.0.0-0ubuntu1~smw3) UNRELEASED; urgency=low
 
   * Initial release.
 
- -- Stephen M. Webb <stephen.webb@canonical.com>  Tue, 26 Nov 2013 15:56:57 -0500
+ -- Stephen M. Webb <stephen.webb@bregmasoft.ca>  Thu, 05 Dec 2013 08:56:59 -0500
