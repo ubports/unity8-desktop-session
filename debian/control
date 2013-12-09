@@ -11,7 +11,7 @@ Architecture: all
 Depends: ${misc:Depends},
          ubuntu-desktop-mir,
          unity8,
-         qtubuntu-android
+         qtubuntu-desktop
 Description: Unity8 desktop session for Mir
  .
  A desktop session running Unity8 on a Mir back end.
