@@ -15,8 +15,9 @@
 # You should have received a copy of the GNU General Public License along with
 # this program.  If not, see <http://www.gnu.org/licenses/>.
 
-xsessiondir = ${datarootdir}/xsessions
 icondir = ${datarootdir}/unity-greeter
+upstartdir = $(datarootdir}/upstart/sessions
+xsessiondir = ${datarootdir}/xsessions
 
 dist_pkgdata_SCRIPTS = \
 	start-unity8-mir
@@ -28,6 +29,9 @@ dist_xsession_DATA = \
 dist_icon_DATA = \
 	custom_unity8-mir_badge.png \
 	custom_unity8-x11_badge.png
+
+dist_upstart_DATA = \
+	unity8-mir.conf
 
 EXTRA_DIST = \
 	unity8-mir.desktop.in \
