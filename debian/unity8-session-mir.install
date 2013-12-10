@@ -1,3 +1,6 @@
-usr/share/unity-greeter/custom_unity8-mir_badge.png
+etc/lightdm/lightdm.conf.d
+usr/sbin/*
+usr/share/upstart/sessions/*
 usr/share/unity8-session/*-mir
+usr/share/unity-greeter/custom_unity8-mir_badge.png
 usr/share/xsessions/unity8-mir.desktop

@@ -1,0 +1,13 @@
+#!/bin/sh 
+#
+# If no X server is available, just run upstart, otherwise fall back to the
+# traditional X-based desktop session startup.
+#
+
+if test -z "$DISPLAY"; then
+  STARTUP="init --user"
+else
+  STARTUP=/usr/sbin/lightdm-session
+fi
+
+exec $STARTUP

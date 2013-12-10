@@ -16,8 +16,10 @@
 # this program.  If not, see <http://www.gnu.org/licenses/>.
 
 icondir = ${datarootdir}/unity-greeter
-upstartdir = $(datarootdir}/upstart/sessions
+upstartdir = ${datarootdir}/upstart/sessions
 xsessiondir = ${datarootdir}/xsessions
+lightdmdir = ${sysconfdir}/lightdm/lightdm.conf.d
+sbindir = ${prefix}/sbin
 
 dist_pkgdata_SCRIPTS = \
 	start-unity8-mir
@@ -32,6 +34,12 @@ dist_icon_DATA = \
 
 dist_upstart_DATA = \
 	unity8-mir.conf
+
+dist_lightdm_DATA = \
+	55-unity8.conf
+
+dist_sbin_SCRIPTS = \
+	lightdm-unity8-session
 
 EXTRA_DIST = \
 	unity8-mir.desktop.in \
