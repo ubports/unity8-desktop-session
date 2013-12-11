@@ -5,9 +5,7 @@
 #
 
 if test -z "$DISPLAY"; then
-  STARTUP="init --user"
+  exec init --user
 else
-  STARTUP=/usr/sbin/lightdm-session
+  exec /usr/sbin/lightdm-session "$@"
 fi
-
-exec $STARTUP
