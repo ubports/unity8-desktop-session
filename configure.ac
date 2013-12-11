@@ -16,7 +16,7 @@
 # this program.  If not, see <http://www.gnu.org/licenses/>.
 
 AC_PREREQ([2.60])
-AC_INIT([Unity8 Session],[1.0.3],[],[unity8-session])
+AC_INIT([Unity8 Session],[1.0.4],[],[unity8-session])
 AM_INIT_AUTOMAKE([1.13 foreign dist-xz])
 AM_SILENT_RULES([yes])
 
