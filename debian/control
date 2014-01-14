@@ -8,10 +8,11 @@ Standards-Version: 3.9.5
 
 Package: unity8-session-mir
 Architecture: all
-Depends: ${misc:Depends},
+Depends: libubuntu-application-api-test1,
+         qtubuntu-desktop,
          ubuntu-desktop-mir,
          unity8,
-         qtubuntu-desktop
+         ${misc:Depends}
 Description: Unity8 desktop session for Mir
  .
  A desktop session running Unity8 on a Mir back end.
@@ -20,13 +21,12 @@ Description: Unity8 desktop session for Mir
 
 Package: unity8-session-x11
 Architecture: all
-Depends: ${misc:Depends},
-         ubuntu-desktop-mir,
+Depends: ubuntu-desktop-mir,
          unity8,
-         unity8-fake-env
+         unity8-fake-env,
+         ${misc:Depends}
 Description: Unity8 desktop session for X11
  .
  A desktop session running Unity8 on an X11 back end.
  .
  This package is provided for evaluation and demonstration purposes only.
-

@@ -1,7 +1,7 @@
 # This file is part of Unity8-session-x11, a desktop session configration
 # package.
 #
-# Copyright 2013 Canonical Ltd.
+# Copyright 2013-2014 Canonical Ltd.
 # 
 # Unity8-session-x11 is free software: you can redistribute it and/or modify it
 # under the terms of the GNU General Public License version 3, as published by
@@ -16,7 +16,7 @@
 # this program.  If not, see <http://www.gnu.org/licenses/>.
 
 AC_PREREQ([2.60])
-AC_INIT([Unity8 Session],[1.0.4],[],[unity8-session])
+AC_INIT([Unity8 Session],[1.0.5],[],[unity8-session])
 AM_INIT_AUTOMAKE([1.13 foreign dist-xz])
 AM_SILENT_RULES([yes])
 
