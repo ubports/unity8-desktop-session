@@ -31,4 +31,4 @@ pre-start script
     fi
 end script
 
-exec ${BINARY:-unity8} -fullscreen -mousetouch $ARGS
+exec ${BINARY:-unity8} $ARGS
