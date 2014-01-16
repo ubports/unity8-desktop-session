@@ -1,5 +1,5 @@
-unity8-desktop-session (1.0.8-0ubuntu1~ppa1) UNRELEASED; urgency=low
+unity8-desktop-session (1.0.8-0ubuntu1~ppa1) trusty; urgency=low
 
   * Initial release.
 
- -- Stephen M. Webb <stephen.webb@canonical.com>  Fri, 06 Dec 2013 09:36:11 -0500
+ -- Stephen M. Webb <stephen.webb@bregmasoft.ca>  Thu, 16 Jan 2014 12:43:51 -0500
