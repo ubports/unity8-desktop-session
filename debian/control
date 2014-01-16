@@ -1,4 +1,4 @@
-Source: unity8-session
+Source: unity8-desktop-session
 Section: misc
 Priority: optional
 Maintainer: Stephen M. Webb <stephen.webb@canonical.com>
@@ -6,11 +6,11 @@ Build-Depends: debhelper (>= 9),
                dh-autoreconf
 Standards-Version: 3.9.5
 
-Package: unity8-session-mir
+Package: unity8-desktop-session-mir
 Architecture: any
 Depends: libubuntu-application-api-test1,
          qtubuntu-desktop,
-         ubuntu-desktop-mir,
+         unity-system-compositor,
          unity8,
          ${misc:Depends}
 Description: Unity8 desktop session for Mir
@@ -19,7 +19,7 @@ Description: Unity8 desktop session for Mir
  .
  This package is provided for evaluation and demonstration purposes only.
 
-Package: unity8-session-x11
+Package: unity8-desktop-session-x11
 Architecture: all
 Depends: ubuntu-desktop-mir,
          unity8,
