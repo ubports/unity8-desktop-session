@@ -24,6 +24,9 @@ sbindir = ${prefix}/sbin
 dist_pkgdata_SCRIPTS = \
 	start-unity8-mir
 
+dist_pkgdata_DATA = \
+	sensors.txt
+
 dist_xsession_DATA = \
 	unity8-mir.desktop \
 	unity8-x11.desktop
@@ -53,6 +56,7 @@ CLEANFILES = \
 
 unity8-mir.conf: unity8-mir.conf.in Makefile
 	$(AM_V_GEN)sed -e 's,[@]LIB_DIR[@],$(libdir),g' \
+	               -e 's,[@]PKGDATA_DIR[@],$(pkgdatadir),g' \
 	    <$(srcdir)/unity8-mir.conf.in >unity8-mir.conf
 
 unity8-mir.desktop: unity8-mir.desktop.in Makefile

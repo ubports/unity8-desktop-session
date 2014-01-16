@@ -9,6 +9,7 @@ expect stop
 env QT_QPA_PLATFORM=ubuntumirserver
 env EGL_PLATFORM=mir
 env UBUNTU_PLATFORM_API_BACKEND=libubuntu_application_api_test.so.1
+env UBUNTU_PLATFORM_API_SENSOR_TEST=@PKGDATA_DIR@/sensors.txt
 env QML2_IMPORT_PATH=@LIB_DIR@/qt5/imports/Unity-Mir
 
 pre-start script

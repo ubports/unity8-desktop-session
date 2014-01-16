@@ -1,0 +1,3 @@
+create proximity
+create accel 0.5 1000 0.1
+create light 0 10 0.5
