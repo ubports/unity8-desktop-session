@@ -7,10 +7,7 @@ respawn
 expect stop
 
 env QT_QPA_PLATFORM=ubuntumirserver
-env EGL_PLATFORM=mir
-env UBUNTU_PLATFORM_API_BACKEND=libubuntu_application_api_test.so.1
-env UBUNTU_PLATFORM_API_SENSOR_TEST=@PKGDATA_DIR@/sensors.txt
-env QML2_IMPORT_PATH=@LIB_DIR@/qt5/imports/Unity-Mir
+env UPSTART_JOB=unity8
 
 pre-start script
     if [ -n "$MIR_SOCKET" ]; then
@@ -29,6 +26,11 @@ pre-start script
         # Point all future jobs in this session to our Mir socket instead of
         # unity-system-compositor's socket.
         initctl set-env --global MIR_SOCKET=$MIR_SERVER_FILE
+        initctl set-env --global QT_QPA_PLATFORM=ubuntumirclient
+        initctl set-env --global EGL_PLATFORM=mir
+        initctl set-env --global UBUNTU_PLATFORM_API_BACKEND=libubuntu_application_api_test.so.1
+        initctl set-env --global UBUNTU_PLATFORM_API_SENSOR_TEST=@PKGDATA_DIR@/sensors.txt
+        initctl set-env --global QML2_IMPORT_PATH=@LIB_DIR@/qt5/imports/Unity-Mir
     fi
 end script
 
