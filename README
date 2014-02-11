@@ -1,0 +1,8 @@
+Unity8 Desktop Session
+======================
+
+This package provides a preview session running Unity8 as a desktop shell,
+compatible with other XDG-compliant shells.
+
+See the file INSTALL for instructions on installing from source and the file
+COPYING for the conditions under which this software may be distributed.
