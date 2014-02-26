@@ -7,13 +7,20 @@ Build-Depends: debhelper (>= 9),
 Standards-Version: 3.9.5
 
 Package: unity8-desktop-session-mir
-Architecture: any
+Architecture: amd64 armhf i386
 Depends: libubuntu-application-api-test1,
          qtubuntu-desktop,
          unity-system-compositor,
          unity8,
          upstart-app-launch,
+         url-dispatcher,
          ${misc:Depends}
+Suggests: camera-app,
+          friends-app,
+          gallery-app,
+          mediaplayer-app,
+          notes-app,
+          webbrowser-app
 Description: Unity8 desktop session for Mir
  .
  A desktop session running Unity8 on a Mir back end.
