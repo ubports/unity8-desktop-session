@@ -1,3 +1,13 @@
+unity8-desktop-session (1.0.10+14.04.20140226-0ubuntu1) trusty; urgency=low
+
+  [ Stephen M. Webb ]
+  * restrict the target architecture of the architecture-specific
+    unity8-desktop-session-mir binary package to [amd64 armhf i386] to
+    relieve Britney's anxiety about missing dependencies on other
+    architectures
+
+ -- Ubuntu daily release <ps-jenkins@lists.canonical.com>  Wed, 26 Feb 2014 17:58:00 +0000
+
 unity8-desktop-session (1.0.10-0ubuntu1) trusty; urgency=low
 
   * initial Ubuntu release (lp: #1277244)
