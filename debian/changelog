@@ -1,3 +1,11 @@
+unity8-desktop-session (1.0.10+14.04.20140303-0ubuntu1) trusty; urgency=low
+
+  [ Stephen M. Webb ]
+  * move installed LightDM config file into $datadir instead of
+    $sysconfdir (LP: #1286176)
+
+ -- Ubuntu daily release <ps-jenkins@lists.canonical.com>  Mon, 03 Mar 2014 20:53:20 +0000
+
 unity8-desktop-session (1.0.10+14.04.20140226-0ubuntu1) trusty; urgency=low
 
   [ Stephen M. Webb ]
