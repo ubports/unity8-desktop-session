@@ -15,10 +15,10 @@
 # You should have received a copy of the GNU General Public License along with
 # this program.  If not, see <http://www.gnu.org/licenses/>.
 
-icondir = ${datarootdir}/unity-greeter
-upstartdir = ${datarootdir}/upstart/sessions
-xsessiondir = ${datarootdir}/xsessions
-lightdmdir = ${sysconfdir}/lightdm/lightdm.conf.d
+icondir = ${datadir}/unity-greeter
+upstartdir = ${datadir}/upstart/sessions
+xsessiondir = ${datadir}/xsessions
+lightdmdir = ${datadir}/lightdm/lightdm.conf.d
 sbindir = ${prefix}/sbin
 
 dist_pkgdata_SCRIPTS = \
