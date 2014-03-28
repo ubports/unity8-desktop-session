@@ -1,3 +1,11 @@
+unity8-desktop-session (1.0.10+14.04.20140328-0ubuntu1) trusty; urgency=low
+
+  [ Stephen M. Webb ]
+  * emit scope-ui-starting signal on start for new scope model (LP:
+    #1299107)
+
+ -- Ubuntu daily release <ps-jenkins@lists.canonical.com>  Fri, 28 Mar 2014 23:33:43 +0000
+
 unity8-desktop-session (1.0.10+14.04.20140303-0ubuntu1) trusty; urgency=low
 
   [ Stephen M. Webb ]
