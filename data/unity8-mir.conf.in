@@ -1,5 +1,7 @@
 description "Unity Shell v8 on Mir"
 
+emits scope-ui-starting
+
 start on xsession SESSION=unity8-mir and started dbus
 stop on desktop-end
 
@@ -31,7 +33,19 @@ pre-start script
         initctl set-env --global UBUNTU_PLATFORM_API_BACKEND=libubuntu_application_api_test.so.1
         initctl set-env --global UBUNTU_PLATFORM_API_SENSOR_TEST=@PKGDATA_DIR@/sensors.txt
         initctl set-env --global QML2_IMPORT_PATH=@LIB_DIR@/qt5/imports/Unity-Mir
+        initctl set-env --global UNITY_INDICATOR_PROFILE=desktop
+
+        gdbus call --session --dest org.freedesktop.DBus --object-path /org/freedesktop/DBus --method org.freedesktop.DBus.UpdateActivationEnvironment "@a{ss} {'MIR_SOCKET': '$MIR_SERVER_FILE'}"
     fi
+
+    if [ -z "$UNITY_SCOPES_LIST" ]; then
+        initctl set-env UNITY_SCOPES_LIST="scopes;clickscope;musicaggregator;videoaggregator"
+    fi
+
+    initctl emit scope-ui-starting
 end script
 
 exec ${BINARY:-unity8} $ARGS
+
+pre-stop exec initctl emit --no-wait desktop-end
+post-stop exec dbus-send --type=method_call --address=$UPSTART_SESSION /com/ubuntu/Upstart com.ubuntu.Upstart0_6.EndSession
