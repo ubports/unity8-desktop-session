@@ -1,3 +1,11 @@
+unity8-desktop-session (1.0.10+14.04.20140402-0ubuntu1) trusty; urgency=low
+
+  [ Stephen M. Webb ]
+  * propagate the QT_QPA_PLATFORM to session services started through D-
+    Bus (LP: #1300921)
+
+ -- Ubuntu daily release <ps-jenkins@lists.canonical.com>  Wed, 02 Apr 2014 20:37:44 +0000
+
 unity8-desktop-session (1.0.10+14.04.20140328-0ubuntu1) trusty; urgency=low
 
   [ Stephen M. Webb ]
