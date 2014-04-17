@@ -1,3 +1,11 @@
+unity8-desktop-session (1.0.10+14.04.20140417.1-0ubuntu1) trusty; urgency=low
+
+  [ Michał Sawicz ]
+  * Emit indicator-services-start upstart event in pre-start. (LP:
+    #1308891)
+
+ -- Ubuntu daily release <ps-jenkins@lists.canonical.com>  Thu, 17 Apr 2014 12:08:06 +0000
+
 unity8-desktop-session (1.0.10+14.04.20140402-0ubuntu1) trusty; urgency=low
 
   [ Stephen M. Webb ]
