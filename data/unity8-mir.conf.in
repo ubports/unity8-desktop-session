@@ -1,6 +1,6 @@
 description "Unity Shell v8 on Mir"
 
-emits scope-ui-starting
+emits scope-ui-starting indicator-services-start
 
 start on xsession SESSION=unity8-mir and started dbus
 stop on desktop-end
