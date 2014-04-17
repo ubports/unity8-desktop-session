@@ -47,6 +47,7 @@ pre-start script
     fi
 
     initctl emit scope-ui-starting
+    initctl emit indicator-services-start
 end script
 
 exec ${BINARY:-unity8} $ARGS
