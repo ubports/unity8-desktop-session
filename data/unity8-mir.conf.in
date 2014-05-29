@@ -30,8 +30,6 @@ pre-start script
         initctl set-env --global MIR_SOCKET=$MIR_SERVER_FILE
         initctl set-env --global QT_QPA_PLATFORM=ubuntumirclient
         initctl set-env --global EGL_PLATFORM=mir
-        initctl set-env --global UBUNTU_PLATFORM_API_BACKEND=libubuntu_application_api_test.so.1
-        initctl set-env --global UBUNTU_PLATFORM_API_SENSOR_TEST=@PKGDATA_DIR@/sensors.txt
         initctl set-env --global QML2_IMPORT_PATH=@LIB_DIR@/qt5/imports/Unity-Mir
         initctl set-env --global UNITY_INDICATOR_PROFILE=desktop
 
