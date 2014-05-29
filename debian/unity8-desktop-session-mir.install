@@ -1,7 +1,6 @@
 usr/sbin/*
-usr/share/lightdm/lightdm.conf.d
+usr/share/lightdm/lightdm.conf.d/55-unity8.conf
 usr/share/unity8-desktop-session
 usr/share/unity-greeter/custom_unity8-mir_badge.png
 usr/share/upstart/sessions/*
 usr/share/xsessions/unity8-mir.desktop
-debian/20-unity8-mir.conf etc/lightdm/lightdm.conf.d

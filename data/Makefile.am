@@ -39,6 +39,7 @@ dist_upstart_DATA = \
 	unity8-mir.conf
 
 dist_lightdm_DATA = \
+	10-unity8-x11.conf \
 	55-unity8.conf
 
 dist_sbin_SCRIPTS = \
