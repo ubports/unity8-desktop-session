@@ -11,7 +11,7 @@ Architecture: amd64 armhf i386
 Depends: qtubuntu-desktop,
          unity-system-compositor,
          unity8,
-         upstart-app-launch,
+         ubuntu-app-launch,
          url-dispatcher,
          ${misc:Depends}
 Suggests: camera-app,
