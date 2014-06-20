@@ -12,6 +12,9 @@ env QT_QPA_PLATFORM=ubuntumirserver
 env UPSTART_JOB=unity8
 
 pre-start script
+    # Tell unity-mir to raise SIGSTOP after we start
+    initctl set-env UNITY_MIR_EMITS_SIGSTOP=1
+
     if [ -n "$MIR_SOCKET" ]; then
         if [ -z "$UNITY_MIR_SOCKET" ]; then
             # Save original value of MIR_SOCKET in case we are restarted,
