@@ -1,3 +1,9 @@
+unity8-desktop-session (1.0.11-0ubuntu1) UNRELEASED; urgency=medium
+
+  * upstream release 1.0.11
+
+ -- Stephen M. Webb <stephen.webb@canonical.com>  Tue, 08 Jul 2014 16:44:35 -0400
+
 unity8-desktop-session (1.0.10+14.10.20140620-0ubuntu1) utopic; urgency=low
 
   [ Albert Astals ]
@@ -29,7 +35,7 @@ unity8-desktop-session (1.0.10+14.10.20140609-0ubuntu1) utopic; urgency=low
 unity8-desktop-session (1.0.10+14.10.20140601-0ubuntu1) utopic; urgency=low
 
   [ Ted Gould ]
-  * Switch to ubuntu-app-launch
+* Switch to ubuntu-app-launch
 
  -- Ubuntu daily release <ps-jenkins@lists.canonical.com>  Sun, 01 Jun 2014 21:06:11 +0000
 
