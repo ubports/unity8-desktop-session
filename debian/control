@@ -8,6 +8,7 @@ Standards-Version: 3.9.5
 
 Package: unity8-desktop-session-mir
 Architecture: amd64 armhf i386
+Conflicts: ubuntu-desktop-mir
 Depends: qtubuntu-desktop,
          unity-system-compositor,
          unity8,
