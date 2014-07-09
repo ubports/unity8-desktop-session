@@ -46,19 +46,12 @@ dist_sbin_SCRIPTS = \
 	lightdm-unity8-session
 
 EXTRA_DIST = \
-	unity8-mir.conf.in \
 	unity8-mir.desktop.in \
 	custom_unity8-mir_badge.xcf \
 	custom_unity8-x11_badge.xcf
 
 CLEANFILES = \
-	unity8-mir.desktop \
-	unity8-mir.conf
-
-unity8-mir.conf: unity8-mir.conf.in Makefile
-	$(AM_V_GEN)sed -e 's,[@]LIB_DIR[@],$(libdir),g' \
-	               -e 's,[@]PKGDATA_DIR[@],$(pkgdatadir),g' \
-	    <$(srcdir)/unity8-mir.conf.in >unity8-mir.conf
+	unity8-mir.desktop
 
 unity8-mir.desktop: unity8-mir.desktop.in Makefile
 	$(AM_V_GEN)sed -e 's,[@]EXEC_DIR[@],$(pkgdatadir),g' \
