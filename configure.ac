@@ -17,7 +17,7 @@
 
 AC_PREREQ([2.60])
 AC_INIT([Unity8 Session],
-        [1.0.10],
+        [1.0.11],
         [stephen.webb@canonical.com],
         [unity8-desktop-session])
 AM_INIT_AUTOMAKE([1.13 foreign dist-xz])
