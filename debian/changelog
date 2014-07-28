@@ -1,3 +1,14 @@
+unity8-desktop-session (1.0.11+14.10.20140728-0ubuntu1) utopic; urgency=low
+
+  [ Gerry Boland ]
+  * debian: add qtmir-desktop as a dependency for unity8-desktop-
+    session-mir
+
+  [ Ubuntu daily release ]
+  * New rebuild forced
+
+ -- Ubuntu daily release <ps-jenkins@lists.canonical.com>  Mon, 28 Jul 2014 02:35:43 +0000
+
 unity8-desktop-session (1.0.11+14.10.20140709-0ubuntu1) utopic; urgency=medium
 
   [ Stephen M. Webb ]
