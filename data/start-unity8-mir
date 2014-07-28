@@ -1,5 +1,5 @@
 #!/bin/sh
-export QT_QPA_PLATFORM=ubuntumirserver
+export QT_QPA_PLATFORM=mirserver
 export EGL_PLATFORM=mir
 export EGL_LOG_LEVEL=debug
 exec /usr/bin/unity8

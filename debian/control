@@ -10,6 +10,7 @@ Package: unity8-desktop-session-mir
 Architecture: all
 Conflicts: ubuntu-desktop-mir
 Depends: qtubuntu-desktop,
+         qtmir-desktop,
          unity-system-compositor,
          unity8,
          ubuntu-app-launch,
