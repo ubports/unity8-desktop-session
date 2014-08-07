@@ -16,7 +16,6 @@
 # this program.  If not, see <http://www.gnu.org/licenses/>.
 
 icondir = ${datadir}/unity-greeter
-upstartdir = ${datadir}/upstart/sessions
 lightdmdir = ${datadir}/lightdm
 lightdm_confdir = ${lightdmdir}/lightdm.conf.d
 lightdm_sessiondir = ${lightdmdir}/sessions
@@ -27,9 +26,6 @@ dist_pkgdata_DATA = \
 dist_icon_DATA = \
 	custom_unity8-mir_badge.png \
 	custom_unity8-x11_badge.png
-
-dist_upstart_DATA = \
-	unity8-mir.conf
 
 dist_lightdm_conf_DATA = \
 	10-unity8-x11.conf \
