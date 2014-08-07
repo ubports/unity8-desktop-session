@@ -1,5 +1,5 @@
 [Desktop Entry]
 Name=Unity8-Mir
-Exec=@EXEC_DIR@/start-unity8-mir
+Exec=lightdm-unity8-session
 Type=Application
 X-LightDM-Session-Type=mir

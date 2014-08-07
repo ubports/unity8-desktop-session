@@ -20,10 +20,6 @@ upstartdir = ${datadir}/upstart/sessions
 lightdmdir = ${datadir}/lightdm
 lightdm_confdir = ${lightdmdir}/lightdm.conf.d
 lightdm_sessiondir = ${lightdmdir}/sessions
-sbindir = ${prefix}/sbin
-
-dist_pkgdata_SCRIPTS = \
-	start-unity8-mir
 
 dist_pkgdata_DATA = \
 	sensors.txt
@@ -43,7 +39,7 @@ dist_lightdm_session_DATA = \
 	unity8-mir.desktop \
 	unity8-x11.desktop
 
-dist_sbin_SCRIPTS = \
+dist_bin_SCRIPTS = \
 	lightdm-unity8-session
 
 EXTRA_DIST = \

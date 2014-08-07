@@ -5,6 +5,8 @@
 #
 
 if test -z "$DISPLAY"; then
+  export QT_QPA_PLATFORM=ubuntumirclient
+  export UNITY_INDICATOR_PROFILE=desktop
   exec init --user
 else
   exec /usr/sbin/lightdm-session "$@"
