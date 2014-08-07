@@ -47,9 +47,3 @@ EXTRA_DIST = \
 	custom_unity8-mir_badge.xcf \
 	custom_unity8-x11_badge.xcf
 
-CLEANFILES = \
-	unity8-mir.desktop
-
-unity8-mir.desktop: unity8-mir.desktop.in Makefile
-	$(AM_V_GEN)sed -e 's,[@]EXEC_DIR[@],$(pkgdatadir),g' \
-	    <$(srcdir)/unity8-mir.desktop.in >unity8-mir.desktop
