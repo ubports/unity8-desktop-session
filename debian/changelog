@@ -1,3 +1,9 @@
+unity8-desktop-session (1.0.12-0ubuntu1) UNRELEASED; urgency=medium
+
+  * upstream release 1.0.12
+
+ -- Stephen M. Webb <stephen.webb@bregmasoft.ca>  Thu, 07 Aug 2014 15:08:41 -0400
+
 unity8-desktop-session (1.0.11+14.10.20140728-0ubuntu1) utopic; urgency=low
 
   [ Gerry Boland ]
