@@ -16,14 +16,9 @@
 # this program.  If not, see <http://www.gnu.org/licenses/>.
 
 icondir = ${datadir}/unity-greeter
-upstartdir = ${datadir}/upstart/sessions
 lightdmdir = ${datadir}/lightdm
 lightdm_confdir = ${lightdmdir}/lightdm.conf.d
 lightdm_sessiondir = ${lightdmdir}/sessions
-sbindir = ${prefix}/sbin
-
-dist_pkgdata_SCRIPTS = \
-	start-unity8-mir
 
 dist_pkgdata_DATA = \
 	sensors.txt
@@ -31,9 +26,6 @@ dist_pkgdata_DATA = \
 dist_icon_DATA = \
 	custom_unity8-mir_badge.png \
 	custom_unity8-x11_badge.png
-
-dist_upstart_DATA = \
-	unity8-mir.conf
 
 dist_lightdm_conf_DATA = \
 	10-unity8-x11.conf \
@@ -43,7 +35,7 @@ dist_lightdm_session_DATA = \
 	unity8-mir.desktop \
 	unity8-x11.desktop
 
-dist_sbin_SCRIPTS = \
+dist_bin_SCRIPTS = \
 	lightdm-unity8-session
 
 EXTRA_DIST = \
@@ -51,9 +43,3 @@ EXTRA_DIST = \
 	custom_unity8-mir_badge.xcf \
 	custom_unity8-x11_badge.xcf
 
-CLEANFILES = \
-	unity8-mir.desktop
-
-unity8-mir.desktop: unity8-mir.desktop.in Makefile
-	$(AM_V_GEN)sed -e 's,[@]EXEC_DIR[@],$(pkgdatadir),g' \
-	    <$(srcdir)/unity8-mir.desktop.in >unity8-mir.desktop
