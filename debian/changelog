@@ -1,8 +1,12 @@
-unity8-desktop-session (1.0.12-0ubuntu1) UNRELEASED; urgency=medium
+unity8-desktop-session (1.0.12+14.10.20140811-0ubuntu1) utopic; urgency=medium
 
+  [ Stephen M. Webb ]
   * upstream release 1.0.12
+  * move LightDM desktop files to lightdm session directory
+  * remove the separate unity8-mir upstart job because the unity8
+    upstart job does everything necessary (LP: #1353041)
 
- -- Stephen M. Webb <stephen.webb@bregmasoft.ca>  Thu, 07 Aug 2014 15:08:41 -0400
+ -- Ubuntu daily release <ps-jenkins@lists.canonical.com>  Mon, 11 Aug 2014 11:47:54 +0000
 
 unity8-desktop-session (1.0.11+14.10.20140728-0ubuntu1) utopic; urgency=low
 
