@@ -1,10 +1,10 @@
-# This file is part of Unity8-session-x11, a desktop session configration
+# This file is part of Unity8-session, a desktop session configration
 # package.
 #
 # Copyright 2013-2014 Canonical Ltd.
 # 
-# Unity8-session-x11 is free software: you can redistribute it and/or modify it
-# under the terms of the GNU General Public License version 3, as published by
+# unity8-desktop-session is free software: you can redistribute it and/or modify
+# it under the terms of the GNU General Public License version 3, as published by
 # the Free Software Foundation.
 # 
 # This program is distributed in the hope that it will be useful, but WITHOUT ANY
@@ -24,22 +24,18 @@ dist_pkgdata_DATA = \
 	sensors.txt
 
 dist_icon_DATA = \
-	custom_unity8-mir_badge.png \
-	custom_unity8-x11_badge.png
+	custom_unity8-mir_badge.png
 
 dist_lightdm_conf_DATA = \
-	10-unity8-x11.conf \
 	55-unity8.conf
 
 dist_lightdm_session_DATA = \
-	unity8-mir.desktop \
-	unity8-x11.desktop
+	unity8-mir.desktop
 
 dist_bin_SCRIPTS = \
 	lightdm-unity8-session
 
 EXTRA_DIST = \
 	unity8-mir.desktop.in \
-	custom_unity8-mir_badge.xcf \
-	custom_unity8-x11_badge.xcf
+	custom_unity8-mir_badge.xcf
 
