@@ -28,14 +28,3 @@ Description: Unity8 desktop session for Mir
  .
  This package is provided for evaluation and demonstration purposes only.
 
-Package: unity8-desktop-session-x11
-Architecture: all
-Depends: ubuntu-desktop-mir,
-         unity8,
-         unity8-fake-env,
-         ${misc:Depends}
-Description: Unity8 desktop session for X11
- .
- A desktop session running Unity8 on an X11 back end.
- .
- This package is provided for evaluation and demonstration purposes only.
