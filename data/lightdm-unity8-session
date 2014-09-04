@@ -4,7 +4,7 @@
 # traditional X-based desktop session startup.
 #
 
-if test -z "$DISPLAY" && [ $XDG_SESSION_DESKTOP != "unity8-mir-lxc" ]; then
+if test -z "$DISPLAY" && [ $DESKTOP_SESSION != "unity8-mir-lxc" ]; then
   export QT_QPA_PLATFORM=ubuntumirclient
   export UNITY_INDICATOR_PROFILE=desktop
   exec init --user
