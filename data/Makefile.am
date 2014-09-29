@@ -36,6 +36,5 @@ dist_bin_SCRIPTS = \
 	lightdm-unity8-session
 
 EXTRA_DIST = \
-	unity8-mir.desktop.in \
-	custom_unity8-mir_badge.xcf
+	unity8-mir.desktop.in
 
