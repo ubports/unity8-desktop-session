@@ -1,3 +1,11 @@
+unity8-desktop-session (1.0.12+14.10.20141009-0ubuntu1) utopic; urgency=low
+
+  [ Chris Townsend ]
+  * Change the string comparison to "unity8-lxc" since that session has
+    been renamed to remove the mir reference. (LP: #1376444)
+
+ -- Ubuntu daily release <ps-jenkins@lists.canonical.com>  Thu, 09 Oct 2014 14:48:08 +0000
+
 unity8-desktop-session (1.0.12+14.10.20140929-0ubuntu1) utopic; urgency=low
 
   [ Robert Ancell ]
