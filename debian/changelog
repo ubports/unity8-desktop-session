@@ -1,3 +1,11 @@
+unity8-desktop-session (1.0.12+15.04.20150306-0ubuntu1) vivid; urgency=medium
+
+  [ Iain Lane ]
+  * Export the platform API backend, required for example for the
+    location service (LP: #1419405)
+
+ -- CI Train Bot <ci-train-bot@canonical.com>  Fri, 06 Mar 2015 14:30:25 +0000
+
 unity8-desktop-session (1.0.12+14.10.20141009-0ubuntu1) utopic; urgency=low
 
   [ Chris Townsend ]
