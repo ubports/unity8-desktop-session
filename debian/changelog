@@ -1,3 +1,11 @@
+unity8-desktop-session (1.0.12+15.04.20150309-0ubuntu1) vivid; urgency=medium
+
+  [ Chris Townsend ]
+  * Use "upstart" instead of "init" when starting the Unity 8 user
+    session due to the upstart->systemd transition. (LP: #1429851)
+
+ -- CI Train Bot <ci-train-bot@canonical.com>  Mon, 09 Mar 2015 20:51:02 +0000
+
 unity8-desktop-session (1.0.12+15.04.20150306-0ubuntu1) vivid; urgency=medium
 
   [ Iain Lane ]
