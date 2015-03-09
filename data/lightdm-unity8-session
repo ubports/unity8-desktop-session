@@ -7,7 +7,7 @@
 if test -z "$DISPLAY" && [ $DESKTOP_SESSION != "unity8-lxc" ]; then
   export QT_QPA_PLATFORM=ubuntumirclient
   export UNITY_INDICATOR_PROFILE=desktop
-  exec init --user
+  exec upstart --user
 else
   exec /usr/sbin/lightdm-session "$@"
 fi
