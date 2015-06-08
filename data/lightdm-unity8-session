@@ -5,6 +5,13 @@
 #
 
 if test -z "$DISPLAY" && [ $DESKTOP_SESSION != "unity8-lxc" ]; then
+  # TODO: The following block is to work around the OOBE wizard for the phone.
+  #       See LP: #1435877.
+  if [ ! -f $HOME/.config/ubuntu-system-settings/wizard-has-run ]; then
+    mkdir -p $HOME/.config/ubuntu-system-settings
+    touch $HOME/.config/ubuntu-system-settings/wizard-has-run
+  fi
+
   export QT_QPA_PLATFORM=ubuntumirclient
   export UNITY_INDICATOR_PROFILE=desktop
   export UBUNTU_PLATFORM_API_BACKEND=desktop_mirclient
