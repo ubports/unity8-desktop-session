@@ -1,3 +1,16 @@
+unity8-desktop-session (1.0.12+15.10.20150609-0ubuntu1) wily; urgency=medium
+
+  [ Chris Townsend ]
+  * Add a dependency for mir-graphics-drivers-desktop since the Mir
+    packaging does not provide a way to pull this meta-package in.
+    Without this package, the Unity 8 desktop session will not start.
+    (LP: #1460868)
+  * Create the wizard-has-run file if it doesn't exist when logging into
+    Unity 8 to bypass the OOBE wizard on a desktop session. (LP:
+    #1463065)
+
+ -- CI Train Bot <ci-train-bot@canonical.com>  Tue, 09 Jun 2015 14:17:17 +0000
+
 unity8-desktop-session (1.0.12+15.04.20150309-0ubuntu1) vivid; urgency=medium
 
   [ Chris Townsend ]
