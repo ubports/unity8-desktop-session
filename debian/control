@@ -15,6 +15,7 @@ Depends: qtubuntu-desktop,
          unity8,
          ubuntu-app-launch,
          url-dispatcher,
+         mir-graphics-drivers-desktop,
          ${misc:Depends}
 Suggests: camera-app,
           friends-app,
