@@ -6,16 +6,18 @@ Build-Depends: debhelper (>= 9),
                dh-autoreconf
 Standards-Version: 3.9.5
 
-Package: unity8-desktop-session-mir
+Package: unity8-desktop-session
 Architecture: all
 Conflicts: ubuntu-desktop-mir
-Depends: qtubuntu-desktop,
+Replaces: unity8-desktop-session-mir (<< 1.0.12+15.10.20150609~)
+Breaks: unity8-desktop-session-mir (<< 1.0.12+15.10.20150609~)
+Depends: mir-graphics-drivers-desktop,
          qtmir-desktop,
+         qtubuntu-desktop,
+         ubuntu-app-launch,
          unity-system-compositor,
          unity8,
-         ubuntu-app-launch,
          url-dispatcher,
-         mir-graphics-drivers-desktop,
          ${misc:Depends}
 Suggests: camera-app,
           friends-app,
@@ -29,3 +31,10 @@ Description: Unity8 desktop session for Mir
  .
  This package is provided for evaluation and demonstration purposes only.
 
+Package: unity8-desktop-session-mir
+Depends: unity8-desktop-session,
+         ${misc:Depends}
+Architecture: all
+Priority: extra
+Description: transitional dummy package
+ This is a transitional dummy package.  It can safely be removed.
