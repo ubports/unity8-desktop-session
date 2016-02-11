@@ -1,5 +1,5 @@
-usr/share/unity-greeter/custom_unity8-mir_badge.png
-usr/share/lightdm/sessions/unity8-mir.desktop
+usr/share/unity-greeter/custom_unity8_badge.png
+usr/share/lightdm/sessions/unity8.desktop
 usr/share/lightdm/lightdm.conf.d/55-unity8.conf
 usr/share/unity8-desktop-session/sensors.txt
 usr/bin/lightdm-unity8-session

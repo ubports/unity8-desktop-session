@@ -1,9 +1,9 @@
 Format: http://www.debian.org/doc/packaging-manuals/copyright-format/1.0
-Upstream-Name: unity8-session-x11
+Upstream-Name: unity8-desktop-session
 Upstream-Contact: Stephen M. Webb <stephen.webb@canonical.com>
 
 Files: *
-Copyright: 2013 Canonical Ltd.
+Copyright: 2013-2016 Canonical Ltd.
 License: GPL-3
  This program is free software: you can redistribute it and/or modify it
  under the terms of the GNU General Public License version 3, as published
