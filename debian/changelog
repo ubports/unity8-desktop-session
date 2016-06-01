@@ -1,3 +1,11 @@
+unity8-desktop-session (1.0.12+16.10.20160601-0ubuntu1) yakkety; urgency=medium
+
+  [ Ted Gould ]
+  * Change name of PolicyKit Agent for Unity8
+  * Add dependency on packagekit click plugin
+
+ -- Christopher Townsend <christopher.townsend@canonical.com>  Wed, 01 Jun 2016 12:40:56 +0000
+
 unity8-desktop-session (1.0.12+15.10.20150609-0ubuntu1) wily; urgency=medium
 
   [ Chris Townsend ]
