@@ -9,7 +9,9 @@ Standards-Version: 3.9.5
 Package: unity8-desktop-session-mir
 Architecture: all
 Conflicts: ubuntu-desktop-mir
-Depends: qtubuntu-desktop,
+Depends: packagekit,
+         packagekit-plugin-click,
+         qtubuntu-desktop,
          qtmir-desktop,
          unity-system-compositor,
          unity8,
