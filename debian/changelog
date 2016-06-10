@@ -1,3 +1,9 @@
+unity8-desktop-session (1.0.13-0ubuntu1) UNRELEASED; urgency=medium
+
+  * Removed the now-redundant -mir for package and asset names.
+
+ -- Stephen M. Webb <stephen.webb@canonical.com>  Thu, 11 Feb 2016 09:43:06 -0500
+
 unity8-desktop-session (1.0.12+16.10.20160601-0ubuntu1) yakkety; urgency=medium
 
   [ Ted Gould ]
