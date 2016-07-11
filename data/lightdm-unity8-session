@@ -12,6 +12,11 @@ if test -z "$DISPLAY" && [ $DESKTOP_SESSION != "unity8-lxc" ]; then
     touch $HOME/.config/ubuntu-system-settings/wizard-has-run
   fi
 
+  # Do any system-configured setup.
+  if [ -r /etc/profile ]; then
+    . /etc/profile
+  fi
+
   export QT_QPA_PLATFORM=ubuntumirclient
   export UNITY_INDICATOR_PROFILE=desktop
   export UBUNTU_PLATFORM_API_BACKEND=desktop_mirclient
