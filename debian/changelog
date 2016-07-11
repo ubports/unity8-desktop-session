@@ -1,3 +1,11 @@
+unity8-desktop-session (1.0.13+16.10.20160711-0ubuntu1) yakkety; urgency=medium
+
+  [ Michael Terry ]
+  * Fix typo, making unity8 the default session again when this package
+    is installed.
+
+ -- Christopher Townsend <christopher.townsend@canonical.com>  Mon, 11 Jul 2016 18:29:43 +0000
+
 unity8-desktop-session (1.0.13+16.10.20160610-0ubuntu1) yakkety; urgency=medium
 
   [ Stephen M. Webb ]
