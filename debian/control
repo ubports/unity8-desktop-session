@@ -2,7 +2,8 @@ Source: unity8-desktop-session
 Section: misc
 Priority: optional
 Maintainer: Ubuntu Developers <ubuntu-devel-discuss@lists.ubuntu.com>
-Build-Depends: debhelper (>= 9), dh-autoreconf
+Build-Depends: debhelper (>= 9),
+               dh-autoreconf
 Standards-Version: 3.9.5
 
 Package: unity8-desktop-session
@@ -10,7 +11,8 @@ Architecture: all
 Conflicts: ubuntu-desktop-mir
 Replaces: unity8-desktop-session-mir (<< 1.0.13)
 Breaks: unity8-desktop-session-mir (<< 1.0.13)
-Depends: packagekit,
+Depends: mir-graphics-drivers-desktop,
+         packagekit,
          packagekit-plugin-click,
          policykit-unity8,
          qtmir-desktop,
@@ -19,8 +21,8 @@ Depends: packagekit,
          unity-system-compositor,
          unity8,
          url-dispatcher,
-         mir-graphics-drivers-desktop,
          ${misc:Depends}
+Recommends: unity-scope-click
 Suggests: camera-app,
           friends-app,
           gallery-app,
@@ -34,7 +36,8 @@ Description: Unity8 desktop session for Mir
  This package is provided for evaluation and demonstration purposes only.
 
 Package: unity8-desktop-session-mir
-Depends: unity8-desktop-session (>= 1.0.13), ${misc:Depends}
+Depends: unity8-desktop-session (>= 1.0.13),
+         ${misc:Depends}
 Architecture: all
 Priority: extra
 Description: transitional dummy package
