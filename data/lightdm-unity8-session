@@ -21,9 +21,11 @@ if test -z "$DISPLAY" && [ $DESKTOP_SESSION != "unity8-lxc" ]; then
   fi
 
   # Do any system-configured setup.
-  if [ -r /etc/profile ]; then
-    . /etc/profile
-  fi
+  for profile in "/etc/profile" "$HOME/.profile"; do
+    if [ -r "$profile" ]; then
+      . "$profile"
+    fi
+  done
 
   export QT_QPA_PLATFORM=ubuntumirclient
   export UNITY_INDICATOR_PROFILE=desktop
