@@ -22,13 +22,15 @@ Depends: mir-graphics-drivers-desktop,
          unity8,
          url-dispatcher,
          ${misc:Depends}
-Recommends: unity-scope-click
-Suggests: camera-app,
-          friends-app,
-          gallery-app,
-          mediaplayer-app,
-          notes-app,
-          webbrowser-app
+Recommends: address-book-app,
+            camera-app,
+            gallery-app,
+            indicator-transfer,
+            mediaplayer-app,
+            unity-scope-click,
+            webbrowser-app
+Suggests: friends-app,
+          notes-app
 Description: Unity8 desktop session for Mir
  .
  A desktop session running Unity8 on a Mir back end.
