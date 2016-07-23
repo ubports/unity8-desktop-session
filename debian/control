@@ -26,11 +26,10 @@ Recommends: address-book-app,
             camera-app,
             gallery-app,
             indicator-transfer,
+            media-hub,
             mediaplayer-app,
             unity-scope-click,
             webbrowser-app
-Suggests: friends-app,
-          notes-app
 Description: Unity8 desktop session for Mir
  .
  A desktop session running Unity8 on a Mir back end.
