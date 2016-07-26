@@ -27,7 +27,7 @@ dist_icon_DATA = \
 	custom_unity8_badge.png
 
 dist_lightdm_conf_DATA = \
-	55-unity8.conf
+	45-unity8.conf
 
 dist_lightdm_session_DATA = \
 	unity8.desktop
