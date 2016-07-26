@@ -28,6 +28,7 @@ if test -z "$DISPLAY" && [ $DESKTOP_SESSION != "unity8-lxc" ]; then
   done
 
   # work around crashes caused by appmenu-qt5
+  # https://bugs.launchpad.net/appmenu-qt5/+bug/1606246
   unset QT_QPA_PLATFORMTHEME
 
   export QT_QPA_PLATFORM=ubuntumirclient
