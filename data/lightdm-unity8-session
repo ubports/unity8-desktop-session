@@ -12,6 +12,25 @@ if test -z "$DISPLAY" && [ $DESKTOP_SESSION != "unity8-lxc" ]; then
     touch $HOME/.config/ubuntu-system-settings/wizard-has-run
   fi
 
+  # Set up xdg dirs
+  [ -z "$XDG_CONFIG_DIRS" ] && export XDG_CONFIG_DIRS=/etc/xdg
+  [ -z "$XDG_DATA_DIRS" ] && export XDG_DATA_DIRS=/usr/local/share:/usr/share
+  if [ -n "$DESKTOP_SESSION" ]; then
+      export XDG_CONFIG_DIRS=/etc/xdg/xdg-$DESKTOP_SESSION:$XDG_CONFIG_DIRS
+      export XDG_DATA_DIRS=/usr/share/$DESKTOP_SESSION:$XDG_DATA_DIRS
+  fi
+
+  # Do any system-configured setup.
+  for profile in "/etc/profile" "$HOME/.profile"; do
+    if [ -r "$profile" ]; then
+      . "$profile"
+    fi
+  done
+
+  # work around crashes caused by appmenu-qt5
+  # https://bugs.launchpad.net/appmenu-qt5/+bug/1606246
+  unset QT_QPA_PLATFORMTHEME
+
   export QT_QPA_PLATFORM=ubuntumirclient
   export UNITY_INDICATOR_PROFILE=desktop
   export UBUNTU_PLATFORM_API_BACKEND=desktop_mirclient
