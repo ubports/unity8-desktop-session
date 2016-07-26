@@ -26,7 +26,6 @@ Recommends: address-book-app,
             camera-app,
             gallery-app,
             indicator-transfer,
-            media-hub,
             mediaplayer-app,
             unity-scope-click,
             webbrowser-app
