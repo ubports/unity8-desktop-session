@@ -1,3 +1,17 @@
+unity8-desktop-session (1.0.13+16.10.20160726.1-0ubuntu1) yakkety; urgency=medium
+
+  [ Chris Townsend ]
+  * Reduce the priority of the Unity 8 session so it is will not appear
+    as the default in Ubuntu 16.10. (LP: #1603102)
+
+  [ Stephen M. Webb ]
+  * load /etc/profile.d in Unity 8 desktop session (LP: #1590439,
+    #1606246)
+  * recommend additional packages to be co-installed with the Unity 8
+    Desktop Session (LP: #1579551, #1591366, #1591394)
+
+ -- Stephen M. Webb <stephen.webb@canonical.com>  Tue, 26 Jul 2016 13:32:01 +0000
+
 unity8-desktop-session (1.0.13+16.10.20160711-0ubuntu1) yakkety; urgency=medium
 
   [ Michael Terry ]
