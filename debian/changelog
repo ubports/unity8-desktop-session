@@ -1,3 +1,9 @@
+unity8-desktop-session (1.0.13+16.10.20160809-0ubuntu1) yakkety; urgency=medium
+
+  * Drop dependency on packagekit-plugin-click. (LP: #1496292)
+
+ -- Timo Jyrinki <timo.jyrinki@canonical.com>  Tue, 09 Aug 2016 11:22:18 +0000
+
 unity8-desktop-session (1.0.13+16.10.20160726.1-0ubuntu1) yakkety; urgency=medium
 
   [ Chris Townsend ]
