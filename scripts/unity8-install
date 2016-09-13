@@ -1,6 +1,6 @@
 #!/bin/bash
 
-if [ -x ~/.snap/auth.json ] ; then
+if [ -f ~/.snap/auth.json ] ; then
 	snap install --devmode --channel=edge unity8-session
 else
 	sudo snap install --devmode --channel=edge unity8-session
