@@ -24,13 +24,15 @@ dist_pkgdata_DATA = \
 	sensors.txt
 
 dist_icon_DATA = \
-	custom_unity8_badge.png
+	custom_unity8_badge.png \
+	custom_unity8-snap_badge.png
 
 dist_lightdm_conf_DATA = \
 	45-unity8.conf
 
 dist_lightdm_session_DATA = \
-	unity8.desktop
+	unity8.desktop \
+	unity8-snap.desktop
 
 dist_bin_SCRIPTS = \
 	lightdm-unity8-session

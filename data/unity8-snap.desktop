@@ -1,0 +1,6 @@
+[Desktop Entry]
+Name=Unity8
+Exec=/snap/bin/unity8-session
+TryExec=/snap/bin/unity8-session
+Type=Application
+X-LightDM-Session-Type=mir
