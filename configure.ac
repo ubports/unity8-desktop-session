@@ -24,5 +24,5 @@ AM_INIT_AUTOMAKE([1.13 foreign dist-xz])
 AM_SILENT_RULES([yes])
 
 AC_CONFIG_FILES([Makefile])
-AC_CONFIG_FILES([data/Makefile])
+AC_CONFIG_FILES([data/Makefile scripts/Makefile])
 AC_OUTPUT
