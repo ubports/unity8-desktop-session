@@ -1,10 +1,12 @@
 Source: unity8-desktop-session
+Maintainer: Ubuntu Developers <ubuntu-devel-discuss@lists.ubuntu.com>
 Section: misc
 Priority: optional
-Maintainer: Ubuntu Developers <ubuntu-devel-discuss@lists.ubuntu.com>
 Build-Depends: debhelper (>= 9),
                dh-autoreconf
 Standards-Version: 3.9.5
+Homepage: https://launchpad.net/unity8-desktop-session
+Vcs-Browser: http://bazaar.launchpad.net/~unity8-desktop-session-team/unity8-desktop-session/trunk/files
 
 Package: unity8-desktop-session
 Architecture: all
@@ -38,6 +40,7 @@ Package: unity8-desktop-session-mir
 Depends: unity8-desktop-session (>= 1.0.13),
          ${misc:Depends}
 Architecture: all
+Section: oldlibs
 Priority: extra
 Description: transitional dummy package
  This is a transitional dummy package.  It can safely be removed.
