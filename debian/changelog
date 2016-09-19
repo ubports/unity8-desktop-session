@@ -1,3 +1,10 @@
+unity8-desktop-session (1.0.13+16.10.20160919-0ubuntu1) yakkety; urgency=medium
+
+  * debian/control: added additional field for increased clarity (LP:
+    #1612357)
+
+ -- Stephen M. Webb <stephen.webb@canonical.com>  Mon, 19 Sep 2016 18:13:46 +0000
+
 unity8-desktop-session (1.0.13+16.10.20160809-0ubuntu1) yakkety; urgency=medium
 
   * Drop dependency on packagekit-plugin-click. (LP: #1496292)
