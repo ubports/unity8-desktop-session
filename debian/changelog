@@ -1,3 +1,15 @@
+unity8-desktop-session (1.0.13+16.10.20160928-0ubuntu1) yakkety; urgency=medium
+
+  [ Iain Lane ]
+  * data/unity8.desktop: Set DesktopNames, so that XDG_CURRENT_DESKTOP
+    is set in the session. This will allow applications to set
+    OnlyShowIn=Unity8 in their .desktop files.
+
+  [ Stephen M. Webb ]
+  * debian/control: add ubuntu-terminal-app to Recommends:
+
+ -- Stephen M. Webb <stephen.webb@canonical.com>  Wed, 28 Sep 2016 14:17:16 +0000
+
 unity8-desktop-session (1.0.13+16.10.20160921-0ubuntu1) yakkety; urgency=medium
 
   * debian/control: move some applications from Recommends to Suggests.
