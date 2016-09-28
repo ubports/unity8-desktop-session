@@ -24,6 +24,7 @@ Depends: mir-graphics-drivers-desktop,
          url-dispatcher,
          ${misc:Depends}
 Recommends: indicator-transfer,
+            ubuntu-terminal-app,
             unity-scope-click,
             webbrowser-app
 Suggests: address-book-app,
