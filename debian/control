@@ -1,17 +1,20 @@
 Source: unity8-desktop-session
+Maintainer: Ubuntu Developers <ubuntu-devel-discuss@lists.ubuntu.com>
 Section: misc
 Priority: optional
-Maintainer: Ubuntu Developers <ubuntu-devel-discuss@lists.ubuntu.com>
-Build-Depends: debhelper (>= 9), dh-autoreconf
+Build-Depends: debhelper (>= 9),
+               dh-autoreconf
 Standards-Version: 3.9.5
+Homepage: https://launchpad.net/unity8-desktop-session
+Vcs-Browser: http://bazaar.launchpad.net/~unity8-desktop-session-team/unity8-desktop-session/trunk/files
 
 Package: unity8-desktop-session
 Architecture: all
 Conflicts: ubuntu-desktop-mir
 Replaces: unity8-desktop-session-mir (<< 1.0.13)
 Breaks: unity8-desktop-session-mir (<< 1.0.13)
-Depends: packagekit,
-         packagekit-plugin-click,
+Depends: mir-graphics-drivers-desktop,
+         packagekit,
          policykit-unity8,
          qtmir-desktop,
          qtubuntu-desktop,
@@ -19,14 +22,14 @@ Depends: packagekit,
          unity-system-compositor,
          unity8,
          url-dispatcher,
-         mir-graphics-drivers-desktop,
          ${misc:Depends}
-Suggests: camera-app,
-          friends-app,
+Recommends: indicator-transfer,
+            unity-scope-click,
+            webbrowser-app
+Suggests: address-book-app,
+          camera-app,
           gallery-app,
-          mediaplayer-app,
-          notes-app,
-          webbrowser-app
+          mediaplayer-app
 Description: Unity8 desktop session for Mir
  .
  A desktop session running Unity8 on a Mir back end.
@@ -34,8 +37,10 @@ Description: Unity8 desktop session for Mir
  This package is provided for evaluation and demonstration purposes only.
 
 Package: unity8-desktop-session-mir
-Depends: unity8-desktop-session (>= 1.0.13), ${misc:Depends}
+Depends: unity8-desktop-session (>= 1.0.13),
+         ${misc:Depends}
 Architecture: all
+Section: oldlibs
 Priority: extra
 Description: transitional dummy package
  This is a transitional dummy package.  It can safely be removed.

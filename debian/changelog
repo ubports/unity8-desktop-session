@@ -1,3 +1,44 @@
+unity8-desktop-session (1.0.13+16.10.20160921-0ubuntu1) yakkety; urgency=medium
+
+  * debian/control: move some applications from Recommends to Suggests.
+
+ -- Stephen M. Webb <stephen.webb@canonical.com>  Wed, 21 Sep 2016 16:45:36 +0000
+
+unity8-desktop-session (1.0.13+16.10.20160919-0ubuntu1) yakkety; urgency=medium
+
+  * debian/control: added additional field for increased clarity (LP:
+    #1612357)
+
+ -- Stephen M. Webb <stephen.webb@canonical.com>  Mon, 19 Sep 2016 18:13:46 +0000
+
+unity8-desktop-session (1.0.13+16.10.20160809-0ubuntu1) yakkety; urgency=medium
+
+  * Drop dependency on packagekit-plugin-click. (LP: #1496292)
+
+ -- Timo Jyrinki <timo.jyrinki@canonical.com>  Tue, 09 Aug 2016 11:22:18 +0000
+
+unity8-desktop-session (1.0.13+16.10.20160726.1-0ubuntu1) yakkety; urgency=medium
+
+  [ Chris Townsend ]
+  * Reduce the priority of the Unity 8 session so it is will not appear
+    as the default in Ubuntu 16.10. (LP: #1603102)
+
+  [ Stephen M. Webb ]
+  * load /etc/profile.d in Unity 8 desktop session (LP: #1590439,
+    #1606246)
+  * recommend additional packages to be co-installed with the Unity 8
+    Desktop Session (LP: #1579551, #1591366, #1591394)
+
+ -- Stephen M. Webb <stephen.webb@canonical.com>  Tue, 26 Jul 2016 13:32:01 +0000
+
+unity8-desktop-session (1.0.13+16.10.20160711-0ubuntu1) yakkety; urgency=medium
+
+  [ Michael Terry ]
+  * Fix typo, making unity8 the default session again when this package
+    is installed.
+
+ -- Christopher Townsend <christopher.townsend@canonical.com>  Mon, 11 Jul 2016 18:29:43 +0000
+
 unity8-desktop-session (1.0.13+16.10.20160610-0ubuntu1) yakkety; urgency=medium
 
   [ Stephen M. Webb ]
