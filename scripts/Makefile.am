@@ -17,3 +17,6 @@
 
 dist_bin_SCRIPTS = \
 	unity8-snap-install
+
+dist_man_MANS = \
+	unity8-snap-install.1
