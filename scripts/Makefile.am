@@ -16,4 +16,4 @@
 # this program.  If not, see <http://www.gnu.org/licenses/>.
 
 dist_bin_SCRIPTS = \
-	unity8-install
+	unity8-snap-install
