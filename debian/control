@@ -50,7 +50,6 @@ Description: transitional dummy package
 Package: unity8-session-snap
 Architecture: all
 Conflicts: unity8-desktop-session,
-           dbus-user-session,
 Depends: lightdm,
          mir-graphics-drivers-desktop,
          snapd,
