@@ -49,7 +49,7 @@ Description: transitional dummy package
 
 Package: unity8-session-snap
 Architecture: all
-Conflicts: unity8-desktop-session,
+Conflicts: unity8-desktop-session
 Depends: lightdm,
          mir-graphics-drivers-desktop,
          snapd,
