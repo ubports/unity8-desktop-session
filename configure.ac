@@ -25,4 +25,6 @@ AM_SILENT_RULES([yes])
 
 AC_CONFIG_FILES([Makefile])
 AC_CONFIG_FILES([data/Makefile])
+AC_CONFIG_FILES([scripts/Makefile])
+
 AC_OUTPUT

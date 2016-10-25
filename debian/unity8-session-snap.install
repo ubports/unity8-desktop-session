@@ -1,0 +1,4 @@
+usr/share/lightdm/sessions/unity8-snap.desktop
+usr/share/unity-greeter/custom_unity8-snap_badge.png
+usr/share/man/man1/unity8-snap-install.*
+usr/bin/unity8-snap-install
