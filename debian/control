@@ -11,7 +11,8 @@ Vcs-Browser: http://bazaar.launchpad.net/~unity8-desktop-session-team/unity8-des
 Package: unity8-desktop-session
 Architecture: all
 Conflicts: ubuntu-desktop-mir,
-           unity8-session-snap
+#           unity8-session-snap
+# Remove conflicts while in development
 Replaces: unity8-desktop-session-mir (<< 1.0.13)
 Breaks: unity8-desktop-session-mir (<< 1.0.13)
 Depends: mir-graphics-drivers-desktop,
@@ -49,7 +50,8 @@ Description: transitional dummy package
 
 Package: unity8-session-snap
 Architecture: all
-Conflicts: unity8-desktop-session
+# Conflicts: unity8-desktop-session
+# Remove conflicts while in development
 Depends: lightdm,
          mir-graphics-drivers-desktop,
          snapd,
