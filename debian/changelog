@@ -1,3 +1,10 @@
+unity8-desktop-session (1.0.13+17.04.20161025.2-0ubuntu1) zesty; urgency=medium
+
+  [ Ted Gould ]
+  * Add a Unity8 Session that is contained in a snap
+
+ -- Christopher Townsend <christopher.townsend@canonical.com>  Tue, 25 Oct 2016 19:29:52 +0000
+
 unity8-desktop-session (1.0.13+16.10.20160928-0ubuntu1) yakkety; urgency=medium
 
   [ Iain Lane ]
