@@ -4,7 +4,7 @@
 # traditional X-based desktop session startup.
 #
 
-if test -z "$DISPLAY" && [ $DESKTOP_SESSION != "unity8-lxc" ] && [ $DESKTOP_SESSION != "unity8-snap" ]; then
+if test -z "$DISPLAY" && [ $DESKTOP_SESSION != "unity8-snap" ]; then
   # TODO: The following block is to work around the OOBE wizard for the phone.
   #       See LP: #1435877.
   if [ ! -f $HOME/.config/ubuntu-system-settings/wizard-has-run ]; then
