@@ -1,3 +1,13 @@
+unity8-desktop-session (1.0.13+17.04.20161103.1-0ubuntu1) zesty; urgency=medium
+
+  [ Albert Astals Cid ]
+  * Also run the regular /usr/sbin/lightdm-session for snap based unity8
+
+  [ Chris Townsend ]
+  * Remove the check for unity8-lxc since that is no longer available.
+
+ -- Christopher Townsend <christopher.townsend@canonical.com>  Thu, 03 Nov 2016 20:00:21 +0000
+
 unity8-desktop-session (1.0.13+17.04.20161025.2-0ubuntu1) zesty; urgency=medium
 
   [ Ted Gould ]
