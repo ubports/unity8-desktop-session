@@ -1,0 +1,27 @@
+/snap/unity8-session/current/usr/share/accountsservice/interfaces/com.canonical.indicator.sound.AccountsService.xml /usr/share/dbus-1/interfaces/unity8-session-snap-com.canonical.indicator.sound.AccountsService.xml
+/usr/share/dbus-1/interfaces/unity8-session-snap-com.canonical.indicator.sound.AccountsService.xml /usr/share/accountsservice/interfaces/unity8-session-snap-com.canonical.indicator.sound.AccountsService.xml
+
+/snap/unity8-session/current/usr/share/accountsservice/interfaces/com.canonical.TelephonyServiceApprover.xml /usr/share/dbus-1/interfaces/unity8-session-snap-com.canonical.TelephonyServiceApprover.xml
+/usr/share/dbus-1/interfaces/unity8-session-snap-com.canonical.TelephonyServiceApprover.xml /usr/share/accountsservice/interfaces/unity8-session-snap-com.canonical.TelephonyServiceApprover.xml
+
+/snap/unity8-session/current/usr/share/accountsservice/interfaces/com.canonical.unity.AccountsService.xml /usr/share/dbus-1/interfaces/unity8-session-snap-com.canonical.unity.AccountsService.xml
+/usr/share/dbus-1/interfaces/unity8-session-snap-com.canonical.unity.AccountsService.xml /usr/share/accountsservice/interfaces/unity8-session-snap-com.canonical.unity.AccountsService.xml
+
+/snap/unity8-session/current/usr/share/accountsservice/interfaces/com.ubuntu.AccountsService.Input.xml /usr/share/dbus-1/interfaces/unity8-session-snap-com.ubuntu.AccountsService.Input.xml
+/usr/share/dbus-1/interfaces/unity8-session-snap-com.ubuntu.AccountsService.Input.xml /usr/share/accountsservice/interfaces/unity8-session-snap-com.ubuntu.AccountsService.Input.xml
+
+/snap/unity8-session/current/usr/share/accountsservice/interfaces/com.ubuntu.AccountsService.SecurityPrivacy.xml /usr/share/dbus-1/interfaces/unity8-session-snap-com.ubuntu.AccountsService.SecurityPrivacy.xml
+/usr/share/dbus-1/interfaces/unity8-session-snap-com.ubuntu.AccountsService.SecurityPrivacy.xml /usr/share/accountsservice/interfaces/unity8-session-snap-com.ubuntu.AccountsService.SecurityPrivacy.xml
+
+/snap/unity8-session/current/usr/share/accountsservice/interfaces/com.ubuntu.AccountsService.Sound.xml /usr/share/dbus-1/interfaces/unity8-session-snap-com.ubuntu.AccountsService.Sound.xml
+/usr/share/dbus-1/interfaces/unity8-session-snap-com.ubuntu.AccountsService.Sound.xml /usr/share/accountsservice/interfaces/unity8-session-snap-com.ubuntu.AccountsService.Sound.xml
+
+/snap/unity8-session/current/usr/share/accountsservice/interfaces/com.ubuntu.touch.AccountsService.Phone.xml /usr/share/dbus-1/interfaces/unity8-session-snap-com.ubuntu.touch.AccountsService.Phone.xml
+/usr/share/dbus-1/interfaces/unity8-session-snap-com.ubuntu.touch.AccountsService.Phone.xml /usr/share/accountsservice/interfaces/unity8-session-snap-com.ubuntu.touch.AccountsService.Phone.xml
+
+/snap/unity8-session/current/usr/share/accountsservice/interfaces/com.ubuntu.touch.AccountsService.SecurityPrivacy.xml /usr/share/dbus-1/interfaces/unity8-session-snap-com.ubuntu.touch.AccountsService.SecurityPrivacy.xml
+/usr/share/dbus-1/interfaces/unity8-session-snap-com.ubuntu.touch.AccountsService.SecurityPrivacy.xml /usr/share/accountsservice/interfaces/unity8-session-snap-com.ubuntu.touch.AccountsService.SecurityPrivacy.xml
+
+/snap/unity8-session/current/usr/share/accountsservice/interfaces/com.ubuntu.touch.AccountsService.Sound.xml /usr/share/dbus-1/interfaces/unity8-session-snap-com.ubuntu.touch.AccountsService.Sound.xml
+/usr/share/dbus-1/interfaces/unity8-session-snap-com.ubuntu.touch.AccountsService.Sound.xml /usr/share/accountsservice/interfaces/unity8-session-snap-com.ubuntu.touch.AccountsService.Sound.xml
+
