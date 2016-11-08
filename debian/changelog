@@ -1,3 +1,10 @@
+unity8-desktop-session (1.0.13+17.04.20161108-0ubuntu1) zesty; urgency=medium
+
+  * Point the system AccountsService daemon at our registered custom
+    properties.
+
+ -- Michael Terry <michael.terry@canonical.com>  Tue, 08 Nov 2016 13:49:44 +0000
+
 unity8-desktop-session (1.0.13+17.04.20161103.1-0ubuntu1) zesty; urgency=medium
 
   [ Albert Astals Cid ]
