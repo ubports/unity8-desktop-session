@@ -53,6 +53,7 @@ Architecture: all
 # Conflicts: unity8-desktop-session
 # Remove conflicts while in development
 Depends: lightdm,
+         dbus-user-session,
          mir-graphics-drivers-desktop,
          snapd,
          unity-system-compositor,
