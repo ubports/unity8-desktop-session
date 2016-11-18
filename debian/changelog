@@ -1,3 +1,10 @@
+unity8-desktop-session (1.0.13+17.04.20161118-0ubuntu1) zesty; urgency=medium
+
+  [ Ted Gould ]
+  * Add dbus-user-session for the systemd based UAL
+
+ -- Christopher Townsend <christopher.townsend@canonical.com>  Fri, 18 Nov 2016 14:42:38 +0000
+
 unity8-desktop-session (1.0.13+17.04.20161108-0ubuntu1) zesty; urgency=medium
 
   * Point the system AccountsService daemon at our registered custom
