@@ -35,8 +35,7 @@ install_snap() {
 
     # Store version installed
     else
-        # This refresh wil usually fail due to no new version, but that's fine.
-        # This also annoyingly does not update from stable to edge...
+        # This refresh will usually fail due to no new version, but that's fine.
         echo_cmd $sudo snap refresh $@
     fi
 }
@@ -50,6 +49,5 @@ install_snap ubuntu-calendar-app --edge --devmode
 install_snap ubuntu-clock-app --edge # has stable channel version
 install_snap ubuntu-filemanager-app --edge --devmode
 install_snap ubuntu-terminal-app --edge --devmode
-install_snap webbrowser-app --edge
 
 exit 0
