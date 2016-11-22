@@ -26,7 +26,7 @@ install_snap() {
                 [Yy]* ) echo_cmd $sudo snap remove $1
                         echo_cmd $sudo snap install $@
                         break;;
-                [Nn]* ) exit;;
+                [Nn]* ) return;;
                 * ) echo "Please answer yes or no.";;
             esac
         done
