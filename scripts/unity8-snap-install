@@ -42,3 +42,4 @@ install_snap() {
 
 install_snap unity8-session --edge --devmode
 install_snap webbrowser-app --edge
+exit 0
