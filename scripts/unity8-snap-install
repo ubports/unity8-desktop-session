@@ -1,7 +1,42 @@
-#!/bin/sh
+#!/bin/bash
+# -*- Mode: sh; indent-tabs-mode: nil; tab-width: 4 -*-
 
-if [ -f ~/.snap/auth.json ] ; then
-	snap install --devmode --channel=edge unity8-session
-else
-	sudo snap install --devmode --channel=edge unity8-session
+sudo=
+if ! [ -f ~/.snap/auth.json ]; then
+    sudo=sudo
 fi
+
+echo_cmd() {
+    echo -e "\033[1m$@\033[0m"
+    $@
+}
+
+install_snap() {
+    rev=$(snap list $1 2>/dev/null | grep "^$1 " | tr -s ' ' | cut -d' ' -f3)
+
+    # No version installed yet
+    if [ -z "$rev" ]; then
+        echo_cmd $sudo snap install $@
+
+    # Local version installed
+    elif expr + "$rev" : 'x.*' >/dev/null; then
+        while true; do
+            read -p "Remove local snap of $1 in favor of store version? [Yn] " yn
+            case ${yn:-y} in
+                [Yy]* ) echo_cmd $sudo snap remove $1
+                        echo_cmd $sudo snap install $@
+                        break;;
+                [Nn]* ) exit;;
+                * ) echo "Please answer yes or no.";;
+            esac
+        done
+
+    # Store version installed
+    else
+        # This refresh wil usually fail due to no new version, but that's fine.
+        echo_cmd $sudo snap refresh $@
+    fi
+}
+
+install_snap unity8-session --edge --devmode
+install_snap webbrowser-app --edge
