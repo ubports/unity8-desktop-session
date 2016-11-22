@@ -1,4 +1,4 @@
-#!/bin/bash
+#!/bin/sh
 # -*- Mode: sh; indent-tabs-mode: nil; tab-width: 4 -*-
 
 sudo=
@@ -7,7 +7,9 @@ if ! [ -f ~/.snap/auth.json ]; then
 fi
 
 echo_cmd() {
-    echo -e "\033[1m$@\033[0m"
+    tput bold
+    echo "$@"
+    tput sgr0
     $@
 }
 
