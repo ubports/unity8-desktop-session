@@ -1,3 +1,10 @@
+unity8-desktop-session (1.0.13+17.04.20161123-0ubuntu1) zesty; urgency=medium
+
+  * Let unity8-snap-install handle already-installed versions of snaps.
+    And make it install several core app snaps.
+
+ -- Michael Terry <michael.terry@canonical.com>  Wed, 23 Nov 2016 15:47:22 +0000
+
 unity8-desktop-session (1.0.13+17.04.20161118-0ubuntu1) zesty; urgency=medium
 
   [ Ted Gould ]
