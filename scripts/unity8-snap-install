@@ -40,14 +40,22 @@ install_snap() {
     fi
 }
 
+install_app() {
+    install_snap $@ && \
+    echo_cmd $sudo snap connect $1:platform ubuntu-app-platform:platform
+}
+
+install_snap ubuntu-app-platform --edge
+
+install_app  address-book-app --edge --devmode
+install_app  camera-app --edge --devmode
+install_app  gallery-app --edge --devmode
+install_app  ubuntu-calculator-app --edge
+install_app  ubuntu-calendar-app --edge --devmode
+install_app  ubuntu-clock-app --edge # has stable channel version
+install_app  ubuntu-filemanager-app --edge --devmode
+install_app  ubuntu-terminal-app --edge --devmode
 install_snap unity8-session --edge --devmode
-install_snap address-book-app --edge --devmode
-install_snap camera-app --edge --devmode
-install_snap gallery-app --edge --devmode
-install_snap ubuntu-calculator-app --edge
-install_snap ubuntu-calendar-app --edge --devmode
-install_snap ubuntu-clock-app --edge # has stable channel version
-install_snap ubuntu-filemanager-app --edge --devmode
-install_snap ubuntu-terminal-app --edge --devmode
+install_snap webbrowser-app --edge
 
 exit 0
