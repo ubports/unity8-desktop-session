@@ -1,3 +1,10 @@
+unity8-desktop-session (1.0.13+17.04.20161212-0ubuntu1) zesty; urgency=medium
+
+  * unity8-snap-install: connect apps to the platform snap and install
+    webbrowser-app
+
+ -- Michael Terry <michael.terry@canonical.com>  Mon, 12 Dec 2016 14:43:19 +0000
+
 unity8-desktop-session (1.0.13+17.04.20161123-0ubuntu1) zesty; urgency=medium
 
   * Let unity8-snap-install handle already-installed versions of snaps.
