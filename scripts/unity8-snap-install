@@ -56,6 +56,6 @@ install_app  ubuntu-clock-app --edge --devmode
 install_app  ubuntu-filemanager-app --edge --devmode
 install_app  ubuntu-terminal-app --edge --devmode
 install_snap unity8-session --edge --devmode
-install_snap webbrowser-app --edge --devmode
+install_app  webbrowser-app --edge --devmode
 
 exit 0
