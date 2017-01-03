@@ -24,6 +24,7 @@ Depends: mir-graphics-drivers-desktop,
          unity-system-compositor,
          unity8,
          url-dispatcher,
+         upstart,
          ${misc:Depends}
 Recommends: indicator-transfer,
             ubuntu-terminal-app,
