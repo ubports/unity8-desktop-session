@@ -1,3 +1,10 @@
+unity8-desktop-session (1.0.13+17.04.20170110.1-0ubuntu1) zesty; urgency=medium
+
+  [ Nick Dedekind ]
+  * Added qtubuntu-appmenutheme requirement
+
+ -- Timo Jyrinki <timo.jyrinki@canonical.com>  Tue, 10 Jan 2017 06:41:46 +0000
+
 unity8-desktop-session (1.0.13+17.04.20161212-0ubuntu2) zesty; urgency=medium
 
   * Currently this session startup scripts explicitely call upstart. Add a
