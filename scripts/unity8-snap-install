@@ -41,11 +41,24 @@ install_snap() {
 }
 
 install_app() {
-    install_snap $@ && \
-    echo_cmd $sudo snap connect $1:platform ubuntu-app-platform:platform
+    install_snap $@ || return
+
+    # These should be auto-connected, but snapd only does so if you install
+    # things in the right order.  In case some existing snaps didn't get the
+    # chance to connect the first time (or the user disconnected them?), let's
+    # do it manually again.
+
+    $sudo snap connect $1:platform ubuntu-app-platform:platform 2>/dev/null
+    $sudo snap connect $1:mir-libs mir-libs:mir-libs 2>/dev/null
+    $sudo snap connect $1:mir unity8-session:mir 2>/dev/null
+    $sudo snap connect $1:unity8 unity8-session:unity8 2>/dev/null
 }
 
+install_snap mir-libs --edge
 install_snap ubuntu-app-platform --edge
+
+install_snap unity8-session --edge --devmode
+$sudo snap connect unity8-session:mir-libs mir-libs:mir-libs 2>/dev/null
 
 install_app  address-book-app --edge --devmode
 install_app  camera-app --edge --devmode
@@ -55,7 +68,6 @@ install_app  ubuntu-calendar-app --edge --devmode
 install_app  ubuntu-clock-app --edge --devmode
 install_app  ubuntu-filemanager-app --edge --devmode
 install_app  ubuntu-terminal-app --edge --devmode
-install_snap unity8-session --edge --devmode
 install_app  webbrowser-app --edge --devmode
 
 exit 0
