@@ -1,3 +1,10 @@
+unity8-desktop-session (1.0.13+17.04.20170221-0ubuntu1) zesty; urgency=medium
+
+  * Support connecting to mir-libs and unity8 when using unity8-snap-
+    install. (LP: #1663048)
+
+ -- Michael Terry <michael.terry@canonical.com>  Tue, 21 Feb 2017 16:33:17 +0000
+
 unity8-desktop-session (1.0.13+17.04.20170110.1-0ubuntu1) zesty; urgency=medium
 
   [ Nick Dedekind ]
