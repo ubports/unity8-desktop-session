@@ -29,6 +29,7 @@ Depends: mir-graphics-drivers-desktop,
          ${misc:Depends}
 Recommends: indicator-transfer,
             ubuntu-terminal-app,
+            unity-scope-mediascanner2,
             webbrowser-app
 Suggests: address-book-app,
           camera-app,
