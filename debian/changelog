@@ -1,3 +1,16 @@
+unity8-desktop-session (1.0.13+17.04.20170307-0ubuntu1) zesty; urgency=medium
+
+  [ Michael Terry ]
+  * Allow unity8 session to connect to LightDM for its authentication.
+
+  [ Stephen M. Webb ]
+  * debian/control: remove receommends dependency on the unity-scope-
+    click package [fixes lp:1668701] (LP: #1668701)
+  * debian/control: add recommended dependency on unity-scope-
+    mediascanner2 [fixes lp:1669543] (LP: #1669543)
+
+ -- Stephen M. Webb <stephen.webb@canonical.com>  Tue, 07 Mar 2017 14:14:46 +0000
+
 unity8-desktop-session (1.0.13+17.04.20170221-0ubuntu1) zesty; urgency=medium
 
   * Support connecting to mir-libs and unity8 when using unity8-snap-
