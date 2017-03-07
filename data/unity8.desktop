@@ -3,4 +3,5 @@ Name=Unity8
 Exec=lightdm-unity8-session
 Type=Application
 X-LightDM-Session-Type=mir
+X-LightDM-Allow-Greeter=true
 DesktopNames=Unity:Unity8
