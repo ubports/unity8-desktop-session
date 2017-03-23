@@ -28,6 +28,8 @@ Depends: mir-graphics-drivers-desktop,
          upstart,
          ${misc:Depends}
 Recommends: indicator-transfer,
+            qtubuntu-print,
+            ubuntu-printing-app,
             ubuntu-terminal-app,
             unity-scope-mediascanner2,
             webbrowser-app
