@@ -1,0 +1,23 @@
+#!/bin/sh 
+# -*- Mode: sh; indent-tabs-mode: nil; tab-width: 2 -*-
+
+# TODO: The following block is to work around the OOBE wizard for the phone.
+#       See LP: #1435877.
+# From mterry: This should be removed, I think; I believe our wizard should run
+#              for the user even on the desktop (it does in snappy, and
+#              should on classic too).  But I'm writing this late in the
+#              zesty cycle and don't want to change anything now.
+if [ ! -f $HOME/.config/ubuntu-system-settings/wizard-has-run ]; then
+  mkdir -p $HOME/.config/ubuntu-system-settings
+  touch $HOME/.config/ubuntu-system-settings/wizard-has-run
+fi
+
+dbus-update-activation-environment --systemd QT_QPA_PLATFORM=ubuntumirclient
+dbus-update-activation-environment --systemd UBUNTU_PLATFORM_API_BACKEND=desktop_mirclient
+
+/usr/lib/gnome-session/run-systemd-session unity8.service
+
+dbus-update-activation-environment --systemd QT_QPA_PLATFORM=
+dbus-update-activation-environment --systemd UBUNTU_PLATFORM_API_BACKEND=
+
+exit 0

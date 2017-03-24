@@ -1,6 +1,6 @@
 [Desktop Entry]
 Name=Unity8
-Exec=lightdm-unity8-session
+Exec=unity8-desktop-session
 Type=Application
 X-LightDM-Session-Type=mir
 X-LightDM-Allow-Greeter=true

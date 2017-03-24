@@ -1,6 +1,5 @@
-usr/bin/lightdm-unity8-session
+usr/bin/unity8-desktop-session
 usr/share/lightdm/lightdm.conf.d/45-unity8.conf
 usr/share/lightdm/sessions/unity8.desktop
 usr/share/unity-greeter/custom_unity8_badge.png
 usr/share/unity8-desktop-session/sensors.txt
-usr/share/upstart/sessions/unity8-copy-env.conf

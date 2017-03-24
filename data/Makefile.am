@@ -19,7 +19,6 @@ icondir = ${datadir}/unity-greeter
 lightdmdir = ${datadir}/lightdm
 lightdm_confdir = ${lightdmdir}/lightdm.conf.d
 lightdm_sessiondir = ${lightdmdir}/sessions
-upstart_sessiondir = ${datadir}/upstart/sessions
 
 dist_pkgdata_DATA = \
 	sensors.txt
@@ -36,10 +35,7 @@ dist_lightdm_session_DATA = \
 	unity8-snap.desktop
 
 dist_bin_SCRIPTS = \
-	lightdm-unity8-session
-
-dist_upstart_session_DATA = \
-	unity8-copy-env.conf
+	unity8-desktop-session
 
 EXTRA_DIST = \
 	unity8.desktop.in
