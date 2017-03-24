@@ -35,7 +35,7 @@ dist_lightdm_session_DATA = \
 	unity8-snap.desktop
 
 dist_bin_SCRIPTS = \
-	unity8-desktop-session
+	lightdm-unity8-session
 
 EXTRA_DIST = \
 	unity8.desktop.in
