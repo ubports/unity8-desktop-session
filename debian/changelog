@@ -1,3 +1,11 @@
+unity8-desktop-session (1.0.13+17.04.20170324-0ubuntu1) zesty; urgency=medium
+
+  [ Michael Terry ]
+  * Copy our upstart environment into dbus and systemd, making sure that
+    activated services have the correct environment. (LP: #1675437)
+
+ -- Ken VanDine <ken.vandine@canonical.com>  Fri, 24 Mar 2017 14:21:15 +0000
+
 unity8-desktop-session (1.0.13+17.04.20170307-0ubuntu1) zesty; urgency=medium
 
   [ Michael Terry ]
