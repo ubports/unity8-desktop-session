@@ -1,3 +1,11 @@
+unity8-desktop-session (1.0.13+17.04.20170328.1-0ubuntu1) zesty; urgency=medium
+
+  * Add qtubuntu-print (which has a recommends of ubuntu-printing-app)
+    as recommends of unity8-desktop-session so we can have printing (LP:
+    #1676436)
+
+ -- Andrew Hayzen <ahayzen@gmail.com>  Tue, 28 Mar 2017 13:37:14 +0000
+
 unity8-desktop-session (1.0.13+17.04.20170324-0ubuntu1) zesty; urgency=medium
 
   [ Michael Terry ]
