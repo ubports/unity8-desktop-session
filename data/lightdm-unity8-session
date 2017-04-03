@@ -12,6 +12,9 @@ if [ ! -f $HOME/.config/ubuntu-system-settings/wizard-has-run ]; then
   touch $HOME/.config/ubuntu-system-settings/wizard-has-run
 fi
 
+systemctl --user import-environment
+systemctl --user set-environment MIR_SERVER_VT=$XDG_VTNR
+
 dbus-update-activation-environment --systemd QT_QPA_PLATFORM=ubuntumirclient
 dbus-update-activation-environment --systemd UBUNTU_PLATFORM_API_BACKEND=desktop_mirclient
 
