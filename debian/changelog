@@ -1,3 +1,9 @@
+unity8-desktop-session (1.0.14+ubports) xenial; urgency=medium
+
+  * Imported to UBports
+
+ -- UBports auto importer <infra@ubports.com>  Thu, 28 Dec 2017 12:40:55 +0100
+
 unity8-desktop-session (1.0.13+17.04.20170328.1-0ubuntu1) zesty; urgency=medium
 
   * Add qtubuntu-print (which has a recommends of ubuntu-printing-app)
