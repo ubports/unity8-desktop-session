@@ -15,7 +15,9 @@ Conflicts: ubuntu-desktop-mir,
 # Remove conflicts while in development
 Replaces: unity8-desktop-session-mir (<< 1.0.13)
 Breaks: unity8-desktop-session-mir (<< 1.0.13)
-Depends: mir-graphics-drivers-desktop,
+Depends: dbus,
+         gnome-session-bin,
+         mir-graphics-drivers-desktop,
          packagekit,
          policykit-unity8,
          qtmir-desktop,
@@ -26,7 +28,6 @@ Depends: mir-graphics-drivers-desktop,
          unity8,
          unity8-greeter,
          url-dispatcher,
-         upstart,
          ${misc:Depends}
 Recommends: indicator-transfer,
             qtubuntu-print,
@@ -38,19 +39,9 @@ Suggests: address-book-app,
           gallery-app,
           mediaplayer-app
 Description: Unity8 desktop session for Mir
- .
  A desktop session running Unity8 on a Mir back end.
  .
  This package is provided for evaluation and demonstration purposes only.
-
-Package: unity8-desktop-session-mir
-Depends: unity8-desktop-session (>= 1.0.13),
-         ${misc:Depends}
-Architecture: all
-Section: oldlibs
-Priority: extra
-Description: transitional dummy package
- This is a transitional dummy package.  It can safely be removed.
 
 Package: unity8-session-snap
 Architecture: all
