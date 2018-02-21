@@ -24,7 +24,6 @@ Depends: mir-graphics-drivers-desktop,
          ubuntu-app-launch,
          unity-system-compositor,
          unity8,
-         unity8-greeter,
          url-dispatcher,
          upstart,
          ${misc:Depends}
@@ -67,3 +66,4 @@ Description: Unity8 session from a Snap
  session. It also, as part of it's execution, installs that snap.
  .
  This package is provided for evaluation and demonstration purposes only.
+
