@@ -18,7 +18,7 @@
 icondir = ${datadir}/unity-greeter
 lightdmdir = ${datadir}/lightdm
 lightdm_confdir = ${lightdmdir}/lightdm.conf.d
-lightdm_sessiondir = ${lightdmdir}/sessions
+wayland_sessiondir = ${datadir}/wayland-sessions/
 
 dist_pkgdata_DATA = \
 	sensors.txt
@@ -30,7 +30,7 @@ dist_icon_DATA = \
 dist_lightdm_conf_DATA = \
 	45-unity8.conf
 
-dist_lightdm_session_DATA = \
+dist_wayland_session_DATA = \
 	unity8.desktop \
 	unity8-snap.desktop
 
